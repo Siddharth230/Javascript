@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 8k</title>
+  </head>
+  <body>
+    <button
+      onclick="
+      playGame('heads')"
+    >
+      heads
+    </button>
+    <button
+      onclick="
+      playGame('tails')
+      "
+    >
+      tails
+    </button>
+    <script>
+      const sco = JSON.parse(localStorage.getItem("sco")) || {
+        wins: 0,
+        loses: 0,
+      };
+      function playGame(guess) {
+        const randomNumber = Math.random();
+        const result = randomNumber < 0.5 ? "heads" : "tails";
+
+        console.log(guess === result ? "You win!" : "You lose!");
+
+        if (guess === result) {
+          sco.wins++;
+        } else {
+          sco.loses++;
+        }
+        console.log(sco);
+
+        localStorage.setItem("sco", JSON.stringify(sco));
+      }
+    </script>
+  </body>
+</html>
