@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9e</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      placeholder="Name"
+      class="js-name-input"
+      onkeydown="
+      if (event.key === 'Enter') {
+        const inputElement = document.querySelector('.js-name-input');
+        document.querySelector('.js-message')
+          .innerHTML = `Your name is: ${inputElement.value}`;
+      }
+    "
+    />
+    <button
+      onclick="
+      const inputElement = document.querySelector('.js-name-input');
+      document.querySelector('.js-message')
+        .innerHTML = `Your name is ${inputElement.value}`
+    "
+    >
+      Submit
+    </button>
+    <p class="js-message"></p>
+  </body>
+</html>
