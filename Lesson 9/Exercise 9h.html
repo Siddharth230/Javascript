@@ -1,2 +1,19 @@
 <!DOCTYPE html>
-<html></html>
+<html>
+  <head>
+    <title>Exercise 9h</title>
+  </head>
+  <body>
+    <input
+      placeholder="Text Box"
+      class="js-input"
+      onkeyup="
+        const inputElement = document.querySelector('.js-input');
+        document.querySelector('.js-text')
+          .innerHTML = inputElement.value;
+      "
+    />
+
+    <p class="js-text"></p>
+  </body>
+</html>
