@@ -7,12 +7,7 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
-.reset-score-button {
-  font-size: 15px;
-  padding: 8px 15px;
-  cursor: pointer;
-}
-.option-button {
+.move-button {
   width: 120px;
   height: 120px;
   border-radius: 60px;
@@ -21,6 +16,21 @@ body {
   margin-right: 10px;
   cursor: pointer;
 }
-.option-icon {
+.move-icon {
   height: 50px;
+}
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.score {
+  margin-top: 60px;
+}
+.reset-score-button {
+  background-color: white;
+  font-size: 15px;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
 }
