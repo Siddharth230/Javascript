@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+}
+
+.calculation {
+  background-color: transparent;
+  color: white;
+  font-size: 40px;
+}
+
+.gray-button {
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin: 6px;
+}
+
+.yellow-button {
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+  background-color: rgb(158, 158, 4);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin: 6px;
+}
+
+.clear-button {
+  font-size: 15px;
+}
