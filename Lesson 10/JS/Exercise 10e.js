@@ -6,3 +6,4 @@ function click(selector) {
     button.classList.remove("is-toggled");
   }
 }
+console.log(12 + 21);

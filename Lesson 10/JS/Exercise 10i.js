@@ -1,4 +1,3 @@
-
 let calculation = localStorage.getItem("calculation") || "";
 displayCalculation();
 
@@ -15,3 +14,4 @@ function saveCalculation() {
 function displayCalculation() {
   document.querySelector(".js-calculation").innerHTML = calculation;
 }
+console.log("Hello world!");
