@@ -5,6 +5,7 @@
   </head>
   <body>
     <script>
+      /*
       function greeting() {
         console.log("Hello!");
       }
@@ -27,6 +28,30 @@
       };
       console.log(object1.fun);
       object1.fun();
+
+      function display(param) {
+        console.log(param);
+      }
+      display(2);
+
+      function run(param) {
+        param();
+      }
+      run(function () {
+        console.log("Hello3!");
+      });
+      */
+
+      setTimeout(function () {
+        console.log("timeout");
+        console.log("timeout2");
+      }, 3000);
+
+      console.log("next line");
+
+      setInterval(function () {
+        console.log("interval");
+      }, 3000);
     </script>
   </body>
 </html>
