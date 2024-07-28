@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 12i</title>
+  </head>
+  <body>
+    <button
+      onclick="messages++;
+      displayNotification();"
+    >
+      Add
+    </button>
+    <button
+      onclick="if (messages > 0) {
+        messages--;
+      }
+        if (messages === 0) {
+          stopNotification();
+        }
+      "
+    >
+      Remove
+    </button>
+    <script>
+      let messages = 2;
+
+      let intervalId;
+
+      let isDisplayNotification;
+
+      displayNotification();
+
+      function displayNotification() {
+        if (isDisplayNotification) {
+          return;
+        }
+
+        isDisplayNotification = true;
+
+        intervalId = setInterval(function () {
+          if (document.title === "Exercise 12i") {
+            document.title = `(${messages}) New messages`;
+          } else {
+            document.title = "Exercise 12i";
+          }
+        }, 1000);
+      }
+
+      function stopNotifications() {
+        isDisplayNotifications = false;
+
+        clearInterval(intervalId);
+        document.title = "Exercise 12i";
+      }
+    </script>
+  </body>
+</html>

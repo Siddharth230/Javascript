@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 12h</title>
+  </head>
+  <body>
+    <button onclick="messages++;">Add</button>
+    <button onclick="messages--;">Remove</button>
+    <script>
+      let messages = 2;
+
+      setInterval(function () {
+        if (document.title === "Exercise 12h") {
+          document.title = `(${messages}) New messages`;
+        } else {
+          document.title = "Exercise 12h";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
