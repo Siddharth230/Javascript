@@ -4,7 +4,14 @@
     <title>Advanced Function</title>
   </head>
   <body>
+    <button onclick="" class="js-button">Click</button>
     <script>
+      const buttonElement = document.querySelector(".js-button");
+
+      buttonElement.addEventListener("click", () => {
+        console.log("click");
+      });
+
       /*
       function greeting() {
         console.log("Hello!");
@@ -57,17 +64,48 @@
       console.log("next line 2");
       */
 
-      ["make dinner", "wash dishes", "watch youtube"].forEach(function (
-        value,
-        index
-      ) {
-        if (value === "wash dishes") {
-          return;
-        }
+      /*
 
-        console.log(index);
-        console.log(value);
-      });
+      ["make dinner", "wash dishes", "watch youtube"].forEach(
+        (value, index) => {
+          if (value === "wash dishes") {
+            return;
+          }
+
+          console.log(index);
+          console.log(value);
+        }
+      );
+
+      const regularFunction = function (param, param2) {
+        console.log("Hello");
+        return 5;
+      };
+
+      const arrowFunction = (param, param2) => {
+        console.log("Hello");
+        return 5;
+      };
+      arrowFunction();
+
+      const oneParam = (param) => {
+        console.log(param + 1);
+      };
+      oneParam(5);
+
+      const oneLine = () => 2 + 3;
+
+      console.log(oneLine());
+
+      const object2 = {
+        method: () => {
+          x;
+        },
+        method() {
+          x;
+        },
+      };
+      */
     </script>
   </body>
 </html>
