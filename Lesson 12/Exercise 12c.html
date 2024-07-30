@@ -4,15 +4,15 @@
     <title>Exercise 12c</title>
   </head>
   <body>
-    <button class="js-button" onclick="updateButton()">Start</button>
+    <button class="js-button">Start</button>
     <script>
-      function updateButton() {
+      document.querySelector(".js-button").addEventListener("click", () => {
         const button = document.querySelector(".js-button");
 
-        setTimeout(function () {
+        setTimeout(() => {
           button.innerHTML = "Finished";
         }, 1000);
-      }
+      });
     </script>
   </body>
 </html>

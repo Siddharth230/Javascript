@@ -4,17 +4,17 @@
     <title>Exercise 12e</title>
   </head>
   <body>
-    <button class="js-button" onclick="update()">Add to cart</button>
+    <button class="js-button">Add to cart</button>
     <div class="js-text-update"></div>
     <script>
-      function update() {
+      document.querySelector(".js-button").addEventListener("click", () => {
         const textElement = document.querySelector(".js-text-update");
         textElement.innerHTML = "Added";
 
-        setTimeout(function () {
+        setTimeout(() => {
           textElement.innerHTML = "";
         }, 1000);
-      }
+      });
     </script>
   </body>
 </html>

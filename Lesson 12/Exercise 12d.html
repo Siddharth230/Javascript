@@ -4,16 +4,16 @@
     <title>Exercise 12</title>
   </head>
   <body>
-    <button class="js-button" onclick="updateButton()">Start</button>
+    <button class="js-button">Start</button>
     <script>
-      function updateButton() {
+      document.querySelector(".js-button").addEventListener("click", () => {
         const button = document.querySelector(".js-button");
 
         button.innerHTML = "Loading...";
-        setTimeout(function () {
+        setTimeout(() => {
           button.innerHTML = "Finished";
         }, 1000);
-      }
+      });
     </script>
   </body>
 </html>
