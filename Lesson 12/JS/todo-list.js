@@ -31,15 +31,16 @@ function renderTodoList() {
     .querySelectorAll(".js-delete-todo-button")
     .forEach((deleteButton, index) => {
       deleteButton.addEventListener("click", () => {
-        console.log(index);
         todoList.splice(index, 1);
         renderTodoList();
       });
     });
 }
+
 document.querySelector(".js-add-todo-button").addEventListener("click", () => {
   addTodo();
 });
+
 function addTodo() {
   const inputElement = document.querySelector(".js-name-input");
   const name = inputElement.value;
