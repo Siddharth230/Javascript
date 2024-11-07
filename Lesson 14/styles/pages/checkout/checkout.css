@@ -225,3 +225,10 @@
     display: initial;
   }
 }
+
+.is-editing-quantity {
+  .quantity-label,
+  .update-quantity-link {
+    display: none;
+  }
+}
